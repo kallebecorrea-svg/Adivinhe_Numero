@@ -1,18 +1,21 @@
-## Getting Started
+# Adivinhe o Número
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Este é um jogo simples de adivinhação feito em Java como parte do meu aprendizado da linguagem. Estou começando a aprender Java e migrando do JavaScript, então este projeto também é uma forma de praticar conceitos novos e comparar as duas linguagens.
 
-## Folder Structure
+## Como funciona
 
-The workspace contains two folders by default, where:
+O jogo escolhe um número aleatório entre 1 e 50. O jogador tem até 7 tentativas para adivinhar. A cada palpite, recebe uma dica para tentar um número maior ou menor. Ao final, pode escolher se quer jogar novamente.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Como executar
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+É necessário ter o JDK instalado. No terminal, a partir da pasta principal do projeto, execute:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+```powershell
+New-Item -ItemType Directory -Force out
+javac -encoding UTF-8 -d out src\AdivnheNumero.java
+java -cp out AdivnheNumero
+```
 
-## Dependency Management
+## Objetivo de aprendizado
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+O projeto pratica entrada de dados com `Scanner`, geração de números aleatórios, estruturas de repetição e condicionais, métodos e validação de entrada.
